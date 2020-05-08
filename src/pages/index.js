@@ -20,17 +20,17 @@ const IndexPage = () => (
       </p>
     </form> */}
 
-    <form 
+    {/* <form 
     method="post" 
     name="contact" 
     data-netlify="true" 
     data-netlify-honeypot="bot-field">
       
-      <p>
-        <label>Name <input type="text" name="name" /></label>
-      </p>
+
+        <input type="text" name="name" />
+ 
       <button>SEND</button>
-    </form>
+    </form> */}
   </Layout>
 )
 
