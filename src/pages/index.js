@@ -26,9 +26,8 @@ const IndexPage = () => (
     data-netlify="true" 
     data-netlify-honeypot="bot-field">
       
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;<input type="text" name="name" />
+        {" "}
+        <input type="text" name="name" />
 
  
       <button>SEND</button>
