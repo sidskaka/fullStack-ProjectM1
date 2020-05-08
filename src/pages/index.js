@@ -20,7 +20,7 @@ const IndexPage = () => (
       </p>
     </form> */}
 
-    {/* <form 
+    <form 
     method="post" 
     name="contact" 
     data-netlify="true" 
@@ -30,7 +30,7 @@ const IndexPage = () => (
         <input type="text" name="name" />
  
       <button>SEND</button>
-    </form> */}
+    </form>
   </Layout>
 )
 
