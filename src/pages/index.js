@@ -10,10 +10,10 @@ const IndexPage = () => (
     <SEO title="Home" />
     <form name="contact" netlify>
       <p>
-        <input type="text" placeholder="votre nom" name="name" />
+        <label>Name <input type="text" name="name" /></label>
       </p>
       <p>
-        <input type="email" placeholder="votre email" name="email" />
+        <label>Email <input type="email" name="email" /></label>
       </p>
       <p>
         <button type="submit">Send</button>
