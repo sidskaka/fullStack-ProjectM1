@@ -21,3 +21,21 @@ collections:
       - { name: categorie, required: true, label: Categorie }
       - { name: sku, required: false, label: Sku}
       - { name: path, required: false, label: Path }
+  - name: categorie
+    label: Categorie
+    folder: categories
+    create: true
+    fields: 
+      - { name: title, required: true, label: Titre }
+      - { name: description, required: true, label: Description, widget: markdown }
+      - { name: sku, required: false, label: Sku}
+      - { name: path, required: true, label: Path }
+  - name: blog
+    label: blog
+    folder: blogs
+    create: true
+    fields:
+      - { name: title, required: true, label: Title }
+      - { name: resume, required: true, label: Resume }
+      - { name: textcomplet, required: true, label: Textcomplet, widget: markdown }
+      - { name: image, required: true, label: image, widget: image }
