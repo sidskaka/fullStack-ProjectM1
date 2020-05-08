@@ -19,7 +19,8 @@ const IndexPage = () => (
         <button type="submit">Send</button>
       </p>
     </form> */}
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <form 
     method="post" 
     name="contact" 
