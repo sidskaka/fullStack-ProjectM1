@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <form name="contact" netlify>
+    {/* <form name="contact" netlify>
       <p>
         <label>Name <input type="text" name="name" /></label>
       </p>
@@ -18,9 +18,13 @@ const IndexPage = () => (
       <p>
         <button type="submit">Send</button>
       </p>
-    </form>
+    </form> */}
 
-    <form method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+    <form 
+    method="post" 
+    name="contact" 
+    data-netlify="true" 
+    data-netlify-honeypot="bot-field">
       
       <p>
         <label>Name <input type="text" name="name" /></label>
