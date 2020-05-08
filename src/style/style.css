@@ -1,0 +1,49 @@
+li {
+    display: inline;
+    padding: 18px;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+nav {
+    margin-left: -25px;
+}
+
+div.first-div {
+    float: left;
+}
+
+div h4 a {
+    color: #000 !important;
+    margin-left: 22%;
+    font-size: 66%;
+}
+
+.second-div h4 a {
+    color: #fff !important;
+    margin-left: 18%;
+    font-size: 84%;
+}
+
+.second-div {
+    width: 20%;
+    float: right;
+    margin-top: 2px;
+}
+
+a.lien-retour {
+    color: #000;
+    text-decoration: none;
+}
+
+.detail-product a:hover {
+    text-decoration: none;
+}
