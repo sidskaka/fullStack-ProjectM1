@@ -5,7 +5,7 @@ class Index extends Component {
    render() {
       return(
          <div>
-            <form method="POST" name="Contact">
+            <form method="POST" name="Contact" netlify>
                <label for="fname"> Nom </label>
                <br/>
                <input type="text" id="fname" name="firstname" />
