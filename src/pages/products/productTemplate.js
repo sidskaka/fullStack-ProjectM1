@@ -13,8 +13,7 @@ class ProductTemplate extends Component {
    render() {
       const getId = this.props.location.search.substr(6, this.props.location.search.length)
       const dataRow = this.props.data.allMarkdownRemark.edges
-      //console.log(dataRow.length)
-      //console.log(getId);
+
       var donnee = "";
 
       dataRow.forEach(element => {

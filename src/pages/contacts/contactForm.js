@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
-class contact extends Component {
+class ContactForm extends Component {
 
    render() {
       return (
@@ -40,4 +40,4 @@ class contact extends Component {
    }
 }
 
-export default contact
+export default ContactForm

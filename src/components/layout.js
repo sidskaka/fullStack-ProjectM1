@@ -40,12 +40,12 @@ const Layout = ({ children }) => {
                 <div className="first-div">
                     <ul>
                         <li><a href="/">Accueil</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/contacts/contactForm">Contact</a></li>
                         <li><a href="/stripe/products-stripe-checkout">Checkout Stripe</a></li>
                         <li><a href="/categories/">Catégorie</a></li>
                         <li><a href="/products/products">Produit</a></li>
                         <li><a href="#">Mon compte</a></li>
-                        <li><a href="/liste-blog">Blog</a></li>
+                        <li><a href="/blogs/blog">Blog</a></li>
                     </ul>
                 </div>
                 <div className="second-div">

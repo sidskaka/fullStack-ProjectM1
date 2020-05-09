@@ -19,7 +19,7 @@ const IndexPage = () => (
         <button type="submit">Send</button>
       </p>
     </form> */}
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <form 
     method="post" 
@@ -27,7 +27,6 @@ const IndexPage = () => (
     data-netlify="true" 
     data-netlify-honeypot="bot-field">
       
-        {/* <input type="text" name="name" placeholder="Your name" /> */}
         <div className="form-group">
           <label htmlFor="email">
             Email
@@ -44,8 +43,7 @@ const IndexPage = () => (
         <input type="hidden" name="form-name" value="contact" />
         <input type="submit" value="envoyer" />
  
-      {/* <button>SEND</button> */}
-    </form>
+    </form> */}
   </Layout>
 )
 
