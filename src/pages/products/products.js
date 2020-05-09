@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
 const Products = ({ data }) => {
    console.log(data);
@@ -25,6 +25,9 @@ const Products = ({ data }) => {
                   <h5>
                      { node.frontmatter.taille }
                   </h5>
+                  <h4 className="detail-product">
+                     <a className="lien-retour" href={`productTemplate?code=${node.id}`}>voir détails</a>
+                  </h4>
                </div>
             )
          }
@@ -45,6 +48,7 @@ export const query = graphql`
                   image
                   title
                }
+               id
             }
          }
       }
