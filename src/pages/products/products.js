@@ -25,9 +25,9 @@ const Products = ({ data }) => {
                   <h5>
                      { node.frontmatter.taille }
                   </h5>
-                  <h4 className="detail-product">
+                  {/* <h4 className="detail-product">
                      <a className="lien-retour" href={`productTemplate?code=${node.id}`}>voir détails</a>
-                  </h4>
+                  </h4> */}
                </div>
             )
          }

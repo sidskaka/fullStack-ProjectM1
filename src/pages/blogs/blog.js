@@ -15,9 +15,9 @@ const listeBlog = ({ data }) => {
                   data.allMarkdownRemark.edges.map(({ node }, index) => (
                      <div className="product__item" key={index}>
                            <h1>
-                              <a href={`blogTemplate?code=${node.id}`}>
+                              {/* <a href={`blogTemplate?code=${node.id}`}>
                                  { node.frontmatter.title }
-                              </a>
+                              </a> */}
                            </h1>
                            <h3>
                               { node.frontmatter.resume }
