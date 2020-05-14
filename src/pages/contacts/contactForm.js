@@ -30,7 +30,7 @@ class ContactForm extends Component {
                      <input type="text" name="firstName" />
 
                   </div>
-                  <input type="hidden" name="form-name" value="contact" />
+                  {/* <input type="hidden" name="form-name" value="contact" /> */}
                   <input type="submit" value="envoyer" />
             
                </form>
