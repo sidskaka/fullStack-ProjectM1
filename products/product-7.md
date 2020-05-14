@@ -6,5 +6,5 @@ image: /assets/ordi.jpg
 couleur: noir
 taille: "0.50"
 categorie: categorie-1
-path: product-7
+path: /product-7
 ---
