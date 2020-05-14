@@ -30,7 +30,7 @@ class ContactForm extends Component {
                      <input type="text" name="firstName" />
 
                   </div>
-                  {/* <input type="hidden" name="form-name" value="contact" /> */}
+                  <input type="hidden" name="form-name" value="contact" />
                   <input type="submit" value="envoyer" />
             
                </form>
@@ -53,14 +53,9 @@ class ContactForm extends Component {
                            <input type="text" name="firstName" />
                         </div><br />
                         <input className="form-control" name="phone" type="number" placeholder="(+33)" /><br />
-                        {/* <input className="form-control" name="email" type="email" placeholder="E-mail..." /><br /> */}
-                        <div className="form-group">
-                           <label htmlFor="email">
-                              Email
-                           </label>
-                           <input type="email" name="email" />
-                        </div>
+                        <input className="form-control" name="email" type="email" placeholder="E-mail..." /><br />
                         <textarea className="form-control" name="text" placeholder="Dite nous comment vous aidez ?" style={{height: '150px'}}></textarea><br />
+                        <input type="hidden" name="form-name" value="contact" />
                         <input className="btn btn-primary" type="submit" value="Envoyer" /><br /><br />
                      </form>
                   </div>
