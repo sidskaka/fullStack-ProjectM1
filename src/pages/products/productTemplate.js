@@ -1,3 +1,19 @@
+import React, { Component } from 'react'
+
+class productTemplate extends Component {
+
+   render() {
+      return (
+         <div>
+            teste
+         </div>
+      )
+   }
+}
+
+export default productTemplate
+
+
 // import React, { Component } from 'react'
 // import { graphql } from "gatsby"
 
