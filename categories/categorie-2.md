@@ -1,5 +1,5 @@
 ---
 title: categorie-2
 description: ma deuxième catégorie
-path: categorie-2
+path: /categorie-2
 ---
