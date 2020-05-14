@@ -39,3 +39,13 @@ collections:
       - { name: resume, required: true, label: Resume }
       - { name: textcomplet, required: true, label: Textcomplet, widget: markdown }
       - { name: image, required: true, label: image, widget: image }
+      - { name: path, required: true, label: Path }
+      - { name: date, required: true, label: Date, widget: date }
+  # - name: markdown
+  #   label: markdown
+  #   folder: src/markdown-pages
+  #   create: true
+  #   fields:
+  #     - { name: slug, required: true, label: Slug }
+  #     - { name: title, required: true, label: Title }
+  #     - { name: date, required: true, label: Date, widget: date }

@@ -8,6 +8,16 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        //path: `${__dirname}/src/pages`,
+        path: `${__dirname}/blogs`,
+        name: 'pages'
+      }
+    },
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
     {
@@ -24,13 +34,13 @@ module.exports = {
         path: `${__dirname}/categories`,
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `blogs`,
-        path: `${__dirname}/blogs`,
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `blogs`,
+    //     path: `${__dirname}/blogs`,
+    //   }  
+    // },
     {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {

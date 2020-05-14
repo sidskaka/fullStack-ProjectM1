@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { graphql } from 'gatsby'
+import '../../style/product-style.css'
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -9,7 +10,7 @@ const Products = ({ data }) => {
    return (
       <Layout>
          <SEO title="Home" />
-         {
+         {/* {
             data.allMarkdownRemark.edges.map(({ node }, index) => 
                <div>
                   <img src={node.frontmatter.image} alt={node.frontmatter.title}/>
@@ -25,11 +26,36 @@ const Products = ({ data }) => {
                   <h5>
                      { node.frontmatter.taille }
                   </h5>
-                  {/* <h4 className="detail-product">
-                     <a className="lien-retour" href={`productTemplate?code=${node.id}`}>voir détails</a>
-                  </h4> */}
                </div>
             )
+         } */}
+         {
+            <div className="container">
+               <div className="row" id="ads">
+                  <div className="col-md-4">
+                     {
+                        data.allMarkdownRemark.edges.map(({ node }, index) => 
+                           <div className="card rounded">
+                              <div className="card-image">
+                                 <span className="card-notify-badge">{node.frontmatter.couleur}</span>
+                                 <span className="card-notify-year">2018</span>
+                                 <img src={node.frontmatter.image} alt={node.frontmatter.title}/>
+                              </div>
+                              <div className="card-image-overlay m-auto">
+                                 <span className="card-detail-badge">{node.frontmatter.price}€</span>
+                              </div>
+                              <div className="card-body text-center">
+                                 <div className="ad-title m-auto">
+                                    <h5>{node.frontmatter.title}</h5>
+                                 </div>
+                                 <a className="ad-btn" href="#">Coup d'oeil</a>
+                              </div>
+                           </div>
+                        )
+                     }
+                  </div>
+               </div>
+            </div>
          }
       </Layout>
    )
@@ -47,6 +73,7 @@ export const query = graphql`
                   categorie
                   image
                   title
+                  price
                }
                id
             }

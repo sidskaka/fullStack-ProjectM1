@@ -5,6 +5,8 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+// https://www.gatsbyjs.org/packages/gatsby-plugin-netlify-identity/ ==> configure gatsby identity
+
 import React from "react"
 import IdentityModal, { useIdentityContext } from "react-netlify-identity-widget"
 import "react-netlify-identity-widget/styles.css"
@@ -49,7 +51,7 @@ const Layout = ({ children }) => {
                     </ul>
                 </div>
                 <div className="second-div">
-                    <nav style={{ marginLeft: "10%" }}>
+                    <nav style={{ marginLeft: "10%", marginTop: "-3%" }}>
                       {" "}
                       <button className="btn" onClick={() => setDialog(true)}>
                         {isLoggedIn ? `Se déconnecter` : "Se connecter"}

@@ -12,4 +12,5 @@ textcomplet: "**Lorem Ipsum**is simply dummy text of the printing and
   Ipsum."
 image: /assets/commerce_home.jpg
 path: /blog-ordi
+date: "05-09-2020"
 ---

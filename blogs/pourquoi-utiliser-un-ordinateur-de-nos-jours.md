@@ -1,4 +1,24 @@
 ---
+path: "/second-post"
+title: "Second Blog Post"
+resume: Toute l'actualité sur les nouveaux explorateurs.
+textcomplet: It is a long established fact that a reader will be distracted by
+  the readable content of a page when looking at its layout. The point of using
+  Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+  opposed to using 'Content here, content here', making it look like readable
+  English. Many desktop publishing packages and web page editors now use Lorem
+  Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+  many web sites still in their infancy. Various versions have evolved over the
+  years, sometimes by accident, sometimes on purpose (injected humour and the
+  like).
+image: /assets/footer_manager.jpg
+date: "04-09-2018"
+---
+
+# Bonjour les gars
+
+
+<!-- ---
 title: Pourquoi utiliser un ordinateur de nos jours ?
 resume: Quels sont les bienfaits d'un ordinateur ?
 textcomplet: Contrary to popular belief, Lorem Ipsum is not simply random text.
@@ -13,4 +33,4 @@ textcomplet: Contrary to popular belief, Lorem Ipsum is not simply random text.
   first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line
   in section 1.10.32.
 image: /assets/footer_manager.jpg
----
+--- -->
