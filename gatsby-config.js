@@ -44,7 +44,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
-        url: `https://cranky-wescoff-5fc2b3.netlify.app`
+        url: `https://sids-gatsby-site.netlify.app/`
       }
     },
     {
