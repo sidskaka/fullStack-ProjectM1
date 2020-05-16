@@ -46,12 +46,7 @@ class ContactForm extends Component {
                         name="contact" 
                         data-netlify="true" 
                         data-netlify-honeypot="bot-field">
-                        <div className="form-group">
-                           <label htmlFor="firstName">
-                              Nom
-                           </label>
-                           <input type="text" name="firstName" />
-                        </div><br />
+                        <input className="form-control" name="name" type="text" placeholder="Nom complet" /><br />
                         <input className="form-control" name="phone" type="number" placeholder="(+33)" /><br />
                         <input className="form-control" name="email" type="email" placeholder="E-mail..." /><br />
                         <textarea className="form-control" name="text" placeholder="Dite nous comment vous aidez ?" style={{height: '150px'}}></textarea><br />

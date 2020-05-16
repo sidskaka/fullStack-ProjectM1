@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
+// require('dotenv').config();
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
 class ProductStripeCheckout extends Component {
+    // constructor(props) {
+    //     super(props)
+    //     console.log(props)
+    // }
     
     componentDidMount() {
+        // this.stripe = window.Stripe(process.env.STRIPE_PUBLIC_KEY)
         this.stripe = window.Stripe('pk_test_KwCvsMRqmT5yJmzsICxgSsdP0089Uf4fPQ')
     }
 
@@ -27,22 +33,29 @@ class ProductStripeCheckout extends Component {
             })
             .then(function (result) {
                 if (result.error) {
-                    console.log(result.error.message);
+                    // console.log(result.error.message);
                 }
             });
         }
     }
 
     render() {
-        const { id, currency, price, name } = this.props;
+        const { id, currency, price, name, image } = this.props;
+        console.log(this.props)
         const priceFloat = (price/100).toFixed(2)
         const formattedPrice = Intl.NumberFormat('de-DE', { style: 'currency', currency }).format(priceFloat);
 
         return (
             <div>
-                <form onSubmit={ this.handleSubmit(id) }>
+                <form onSubmit={this.handleSubmit(id)}>
                     {/* <h2> { name } ({ formattedPrice }) </h2> */}
                     <button type="submit">Acheter maintenent</button>
+                    <button className="buy-button snipcart-add-item" 
+                    data-item-id={id} 
+                    data-item-price={price}
+                    data-item-url="/"
+                    data-item-name={name}
+                    data-item-image={image}>Ajouter au panier</button>
                 </form>
             </div> 
             
@@ -54,27 +67,27 @@ export default () => (
     <StaticQuery 
         query = {
             graphql`
-                { 
-                    allStripeSku {
-                        edges {
-                            node {
-                                id
-                                currency
-                                price
-                                attributes {
-                                    name
-                                }
-                                image
+            { 
+                allStripeSku {
+                    edges {
+                        node {
+                            id
+                            currency
+                            price
+                            attributes {
+                                name
                             }
+                            image
                         }
                     }
                 }
+            }
             `
         }
         render = { data => (
             <Layout>
                 <SEO title="Home" />
-                {console.log(data)}
+                {/* {console.log(data)} */}
                 <div>
                     {   
                         data.allStripeSku.edges.map(({ node: sku }) => (
@@ -84,6 +97,7 @@ export default () => (
                                     currency = { sku.currency }
                                     price = { sku.price }
                                     name = { sku.attributes.name }
+                                    image = { sku.image }
                                 />
                                 {/* <img src={ sku.image } alt={sku.name} /> */}
 

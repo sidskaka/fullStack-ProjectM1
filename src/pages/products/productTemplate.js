@@ -1,15 +1,57 @@
 import React, { Component } from 'react'
 
 class productTemplate extends Component {
+   // componentDidMount() {
+   //    this.stripe = window.Stripe('pk_test_KwCvsMRqmT5yJmzsICxgSsdP0089Uf4fPQ')
+   // }
+   handleSubmit(sku) {
+      var stripe = require('stripe')('sk_test_ajhZPBXq4neLcM2f61RMC1b000tUiL0rVt');
+      stripe.products.create(
+         {
+           name: 'T-shirt',
+           type: 'good',
+           description: 'Comfortable cotton t-shirt',
+           attributes: ['size', 'gender'],
+         },
+         function(err, product) {
+           // asynchronously called
+         }
+       );
+   }
 
    render() {
+      const id = "HE_des"
       return (
          <div>
-            teste
+            <div>
+               <form onSubmit={ this.handleSubmit(id) }>
+                  <button type="submit">Ajouter</button>
+               </form>
+            </div>
          </div>
       )
    }
 }
+
+export const query = graphql`
+   {
+      allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/products/"}}) {
+         edges {
+            node {
+               frontmatter {
+                  taille
+                  couleur
+                  categorie
+                  image
+                  title
+                  price
+               }
+               id
+            }
+         }
+      }
+   }
+`
 
 export default productTemplate
 
