@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <button type="button" class="btn btn-primary">Primary</button>
     {/* <form name="contact" netlify>
       <p>
         <label>Name <input type="text" name="name" /></label>
