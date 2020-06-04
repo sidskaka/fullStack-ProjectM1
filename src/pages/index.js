@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Bienvenue dans votre boutique</h1>
+    <h1 style={{marginLeft: '25%'}}>Bienvenue dans votre boutique</h1>
     {/* <form name="contact" netlify>
       <p>
         <label>Name <input type="text" name="name" /></label>
