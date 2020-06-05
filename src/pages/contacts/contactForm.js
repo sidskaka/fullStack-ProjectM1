@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import '../../style/contact.css'
 
 class ContactForm extends Component {
 
@@ -37,7 +38,7 @@ class ContactForm extends Component {
 
                <div className="container">
 
-                  <h3 className="text-center">Contactez-nous facilement</h3><br />
+                  <h3 className="text-center" style={{"font-size": "1.75rem"}}>Contactez-nous facilement</h3><br />
 
                   <div className="row">
                   <div className="col-md-8">
