@@ -21,6 +21,14 @@
     max-width: 33.333333%;
 }
 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* #ads .card-notify-badge {
     position: absolute;
     left: -10px !important;
