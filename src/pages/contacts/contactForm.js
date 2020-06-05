@@ -10,14 +10,14 @@ class ContactForm extends Component {
          <Layout>
          <SEO title="Home" />         
             <div>
-               <form 
+               {/* <form 
                   method="post" 
                   name="contact" 
                   data-netlify="true" 
                   data-netlify-honeypot="bot-field">
          
                   {/* <input type="text" name="name" placeholder="Your name" /> */}
-                  <div className="form-group">
+                  {/* <div className="form-group">
                      <label htmlFor="email">
                         Email
                      </label>
@@ -33,7 +33,7 @@ class ContactForm extends Component {
                   <input type="hidden" name="form-name" value="contact" />
                   <input type="submit" value="envoyer" />
             
-               </form>
+               </form> */}
 
                <div className="container">
 
@@ -46,7 +46,7 @@ class ContactForm extends Component {
                         name="contact" 
                         data-netlify="true" 
                         data-netlify-honeypot="bot-field">
-                           
+
                         <input className="form-control" name="firstName" type="text" placeholder="Nom complet" /><br />
                         <input className="form-control" name="phone" type="number" placeholder="(+33)" /><br />
                         <input className="form-control" name="email" type="email" placeholder="E-mail..." /><br />
