@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
                     </a>
                     <nav style={{ marginLeft: "18%", marginTop: "-24%" }}>
                       {" "}
-                      <button className="btn" onClick={() => setDialog(true)}>
+                      <button className="button" onClick={() => setDialog(true)}>
                         {isLoggedIn ? `Se déconnecter` : "Se connecter"}
                       </button>
                     </nav>
