@@ -73,9 +73,10 @@ class Products extends Component{
                                     <div className="ad-title m-auto">
                                        <h5>{ node.frontmatter.name }</h5>
                                     </div>
-                                    <form onSubmit={this.handleSubmit(node.frontmatter.sku)}>
+                                    <a style={{"textDecoration": "none"}} href={`${node.frontmatter.path}`}>Coup d'oeil</a>
+                                    {/* <form onSubmit={this.handleSubmit(node.frontmatter.sku)}>
                                        <button type="submit">Coup d'oeil</button>
-                                    </form>
+                                    </form> */}
                                     {/* <a className="ad-btn" href="#">Coup d'oeil</a> */}
                                  </div>
                               </div>

@@ -57,7 +57,7 @@ const listeBlog = ({ data }) => {
                      {/* <p>{node.frontmatter.textcomplet}</p> */}
                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
                      <p className="read-more">
-                        <a href={`${node.frontmatter.path}`}>Read More</a>
+                        <a href={`${node.frontmatter.path}`}>En savoir plus</a>
                      </p>
                   </div>
                </div>
