@@ -10,8 +10,9 @@
 import React from "react"
 import IdentityModal, { useIdentityContext } from "react-netlify-identity-widget"
 import "react-netlify-identity-widget/styles.css"
-import Menu from './menu'
+// import Menu from './menu'
 import "./layout.css"
+import '../style/style.css'
 
 const Layout = ({ children }) => {
   const identity = useIdentityContext()
