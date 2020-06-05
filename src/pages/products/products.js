@@ -62,8 +62,8 @@ class Products extends Component{
                            <div className="col-md-4">
                               <div className="card rounded">
                                  <div className="card-image">
-                                    <span className="card-notify-badge">{ node.frontmatter.couleur }</span>
-                                    <span className="card-notify-year" style={{ width: '26%' }}>{ node.frontmatter.categorie }</span>
+                                    <span className="">{ node.frontmatter.couleur }</span>
+                                    <span className="" style={{ width: '26%' }}>{ node.frontmatter.categorie }</span>
                                     <img src={ node.frontmatter.image } alt="product" style={{ width: '100%' }}/>
                                  </div>
                                  <div className="card-image-overlay m-auto">
